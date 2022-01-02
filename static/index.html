@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Austin recycling drop-off locations</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js"></script>
+
+    <script
+      defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZMQOyRXJ4HWdHVaOWpmaJfmH8CiyL0pk&v=weekly&libraries=places&callback=initialize&solution_channel=GMP_codelabs_fullstackstorelocator_v1_a"
+    ></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <!-- Autocomplete div goes here -->
+    <div id="panel" class="closed"></div>
+     <div class="hidden">
+      <div id="pac-card">
+        <div id="pac-title">Find the nearest location</div>
+        <div id="pac-container">
+          <input
+            id="pac-input"
+            type="text"
+            placeholder="Enter an address"
+            class="pac-target-input"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
